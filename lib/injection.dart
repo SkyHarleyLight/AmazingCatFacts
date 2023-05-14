@@ -10,11 +10,8 @@ import 'package:amazing_cat_facts/features/retreive_cat_fact/presentation/cubits
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 
-/// A singleton instance of [GetIt] that manages dependency injection
-/// for the app.
 final getIt = GetIt.instance;
 
-/// Initializes the app by registering all necessary dependencies with [GetIt].
 void init() {
   _registerServices();
   _registerRepositories();
